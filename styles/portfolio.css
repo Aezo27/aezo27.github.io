@@ -204,9 +204,6 @@ section
 }
 .super_container
 {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
 	padding-left: 40px;
 	padding-bottom: 45px;
 	padding-right: 41px;
@@ -540,7 +537,7 @@ section
 .main_content_scroll
 {
 	margin-top: 62px;
-	max-height: calc(100% - 183px - 93px - 62px);
+	max-height: 100%;
 }
 .mCS-minimal.mCSB_scrollTools .mCSB_draggerRail, .mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail
 {
@@ -701,7 +698,7 @@ section
 {
 	width: calc((100% - 279px) / 3);
 	float: left;
-	margin-bottom: 89px;
+	margin-bottom: 60px;
 	margin-right: 93px;
 	background: #100f3a;
 }
