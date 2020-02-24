@@ -7,7 +7,6 @@
 1. Vars and Inits
 2. Set Header
 3. Init Menu
-4. Init Isotope
 
 
 ******************************/
@@ -109,47 +108,5 @@ $(document).ready(function()
 		menu.removeClass('active');
 		menuActive = false;
 	}
-
-	/* 
-
-	4. Init Isotope Filtering
-
-	*/
-
-    function initIsotope()
-    {
-    	if($('.grid').length)
-    	{
-    		$('.grid').isotope({
-	  			itemSelector: '.grid-item',
-	  			percentPosition: true,
-	  			masonry:
-	  			{
-				    horizontalOrder: true
-			  	}
-	        });
-
-	        if($('.portfolio_category').length)
-	    	{
-	    		$('.portfolio_category').click(function()
-		    	{
-			        $('.portfolio_category.active').removeClass('active');
-			        $(this).addClass('active');
-			 
-			        var selector = $(this).attr('data-filter');
-			        $('.portfolio_grid').isotope({
-			            filter: selector,
-			            animationOptions: {
-			                duration: 750,
-			                easing: 'linear',
-			                queue: false
-			            }
-			        });
-
-			         return false;
-			    });
-	    	}
-    	}
-    }
 
 });
