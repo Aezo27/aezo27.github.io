@@ -808,3 +808,6 @@ section
 	width: 100%;
 	height: calc(100% + 30px);
 }
+.sosmed img {
+	width: 100%;
+}
