@@ -493,9 +493,14 @@ h1, h2, h3, h4, h5,
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     position: relative;
-    padding: 0 20px 20px 20px;
-    height: calc(100vh - 52px);
-    padding-bottom: 150px; }
+    padding: 0;
+    padding-bottom: 150px; 
+    padding: 0 1px 0 0;
+    height: 350px;}
+  .site-mobile-menu .site-mobile-menu-footer {
+    padding-left: 4rem;
+    margin-top: 3rem;
+  }
   .site-mobile-menu .site-nav-wrap {
     padding: 0;
     margin: 0;
@@ -505,14 +510,18 @@ h1, h2, h3, h4, h5,
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: #212529; 
+      font-weight: bold;}
       .site-mobile-menu .site-nav-wrap a:hover {
         color: #FFC107; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
-      display: block; }
-      .site-mobile-menu .site-nav-wrap li .active {
-        color: #FFC107; }
+      display: block; 
+    box-shadow: 8px 8px 2px rgba(0,0,0,.075), 8px 8px 8px #ece9cf;
+    border-bottom: 1px solid #9E9E9E;}
+    .site-mobile-menu .site-nav-wrap li .active {
+      color: #ffffff;
+      background-color: #ffc107; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
