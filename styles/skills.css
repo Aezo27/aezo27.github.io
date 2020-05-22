@@ -277,6 +277,21 @@ section
 {
 	height: 100%;
 }
+.logo img {
+	top: 10px;
+	position: relative;
+	height: 35px;
+}
+.header.scrolled .logo img {
+    height: 24px;
+	top: 6px;
+}
+@media only screen and (max-width: 767px){
+	.logo img {
+		height: 28px;
+		top: 8px;
+	}
+}
 .logo
 {
 	font-size: 36px;
@@ -289,6 +304,7 @@ section
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+	display: flex;
 }
 .header.scrolled .logo
 {
