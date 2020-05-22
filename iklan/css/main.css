@@ -10,7 +10,37 @@
   src: url('../fonts/Quantico/Quantico-Bold.ttf'); 
 }
 
+/*//////////////////////////////////////////////////////////////////
+[ Logo Web ]*/
 
+.hp {
+  display: none;
+}
+
+.pc img, .hp img {
+  top: -5px;
+  position: relative;
+}
+.pc {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .sticky-wrapper .shrink {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
+}
+  
+@media (max-width: 400px) {
+.pc {
+  display: none;
+}
+
+.hp {
+  display: block;
+}
+
+}
 /*//////////////////////////////////////////////////////////////////
 [ Sosmed Banner ]*/
 

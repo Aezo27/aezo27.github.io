@@ -4,7 +4,7 @@
     <title>Rama Shop &mdash; Belanja puas hanya disini</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="shortcut icon" href="images/logo.png">
     
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -42,7 +42,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
    
-    <div class="top-bar py-3 bg-light" id="home-section">
+    <!-- <div class="top-bar py-3 bg-light" id="home-section">
       <div class="container">
         <div class="row align-items-center">
          
@@ -65,17 +65,18 @@
           </div>
         </div>
       </div> 
-    </div>
+    </div> -->
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+    <header class="site-navbar py-3 js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
         <div class="row align-items-center">
           
-          <div class="col-6 col-xl-3 mini">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black mb-0">Rama Shop<span class="text-primary">.</span> </a></h1>
+          <div class="col-6 col-xl-4 mini">
+            <h1 class="mb-0 site-logo pc"><a href="index.html" class="text-black mb-0"><img src="images/logo.png" height="35">Rama Shop<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo hp"><a href="index.html" class="text-black mb-0"><img src="images/logo.png" height="35">Shop<span class="text-primary">.</span></a></h1>
           </div>
-          <div class="col-12 col-md-9 d-none d-xl-block">
+          <div class="col-12 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -90,7 +91,7 @@
           </div>
 
 
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3 hp" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3 hp1" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>
@@ -338,7 +339,7 @@
       </div>
     </div>
     
-    <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
+    <div class="site-blocks-cover overlay get-notification promo" id="special-section" style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
       <div class="container">
 
         <div class="row align-items-center justify-content-center">
@@ -348,6 +349,22 @@
             <p class="mb-5 lead">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
             
             <div class="cd100"></div>
+
+            <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Belanja Sekarang</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay get-notification not-promo" id="special-section" style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 text-center">
+            <h3 class="section-sub-title" style="color: #fff;">Promo Spesial</h3>
+            <h3 class="section-title text-white mb-4">Nantikan Promo Dilain Hari</h3>
+            <p class="mb-5 lead">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
 
             <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Belanja Sekarang</a></p>
           </div>
@@ -592,7 +609,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/aos.js"></script>
@@ -601,9 +617,16 @@
 <!--===============================================================================================-->
   <script src="js/flipclock.min.js"></script>
   <script>
-    var date = new Date(2020, 4, 29); //Bulan dimuali dari 0
+    var date = new Date("May 29, 2020 00:00:00");
     var now = new Date();
     var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+    if (diff <= 0) {
+      jQuery(".not-ptomo").show();
+      jQuery(".promo").hide();
+    } else {
+      jQuery(".promo").show();
+      jQuery(".not-promo").hide();
+    }
 
     var clock = $('.cd100').FlipClock(diff, {
       clockFace: 'DailyCounter',
