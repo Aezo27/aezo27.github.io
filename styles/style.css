@@ -495,7 +495,8 @@ h1, h2, h3, h4, h5,
     position: relative;
     padding: 0;
     padding-bottom: 150px; 
-    padding: 0 1px 0 0;}
+    padding: 0 1px 0 0;
+    height: 400px;}
   .site-mobile-menu .site-mobile-menu-footer {
     padding-left: 4rem;
     margin-top: 3rem;
