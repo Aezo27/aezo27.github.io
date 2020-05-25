@@ -334,14 +334,14 @@ h1, h2, h3, h4, h5,
     .site-navbar .site-navigation .site-menu .active {
       color: #ffffff;
       display: inline-block;
-      padding: 5px 20px; }
+      padding: 5px 20px 5px 0 }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block; }
     .site-navbar .site-navigation .site-menu > li {
       display: inline-block; }
       .site-navbar .site-navigation .site-menu > li > a {
-        padding: 5px 20px;
+        padding: 5px 20px 5px 0;
         color: #000;
         display: inline-block;
         text-decoration: none !important; }
