@@ -295,7 +295,7 @@
                 <div class="Harga"><del class="mr-2">$269.00</del> $69.00</div>
               </div>
               <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Lihat Detil</a>
+                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Lihat Detail</a>
                 <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Tambah ke Keranjang</a>
               </p>
             </div>
@@ -319,7 +319,7 @@
                 <div class="Harga"><del class="mr-2">$269.00</del> $69.00</div>
               </div>
               <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Lihat Detil</a>
+                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Lihat Detail</a>
                 <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Tambah ke Keranjang</a>
               </p>
             </div>
@@ -605,8 +605,7 @@
           </div>
           <div class="col-md-4">
             <h2 class="footer-heading mb-4">Maps</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.924242441649!2d110.96882861788316!3d-7.297459272542628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a07149d419b87%3A0xf3af198132ad0508!2zN8KwMTcnNTEuMCJTIDExMMKwNTgnMDcuMCJF!5e0!3m2!1sen!2sid!4v1590092607991!5m2!1sen!2sid"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.924242441649!2d110.96882861788316!3d-7.297459272542628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a07149d419b87%3A0xf3af198132ad0508!2zN8KwMTcnNTEuMCJTIDExMMKwNTgnMDcuMCJF!5e0!3m2!1sen!2sid!4v1590092607991!5m2!1sen!2sid"
                frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false"
               tabindex="0"></iframe>
           </div>
@@ -651,11 +650,11 @@
     var now = new Date();
     var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
     if (diff <= 0) {
-      jQuery(".not-ptomo").show();
-      jQuery(".promo").hide();
+      $(".not-ptomo").show();
+      $(".promo").hide();
     } else {
-      jQuery(".promo").show();
-      jQuery(".not-promo").hide();
+      $(".promo").show();
+      $(".not-promo").hide();
     }
 
     var clock = $('.cd100').FlipClock(diff, {
