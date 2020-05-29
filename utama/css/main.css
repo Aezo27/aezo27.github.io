@@ -1,0 +1,238 @@
+.text-black {
+  color: #000 !important; }
+
+.text-secondary {
+  color: #f16821 !important; }
+
+.site-logo {
+    position: relative;
+    left: 0;
+    top: -5px;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.site-logo img {
+    top: -5px;
+    position: relative;
+}
+
+a {
+    color: #e7ab3c;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Payment Page ]*/
+
+.btn1 {
+    background: #000000;
+    border-color: #000000;
+    padding: 15px;
+    color: #fff;
+}
+
+.panel-col-green {
+    border: 1px solid #4CAF50 !important;
+}
+
+.title-green {
+    background-color: #4CAF50 !important;
+    color: #fff !important;
+}
+
+.panel-col-brown {
+    border: 1px solid #795548 !important;
+}
+
+.title-brown{
+    background-color: #795548 !important;
+    color: #fff !important;
+}
+
+.title-teal{
+    background-color: #009688 !important;
+    color: #fff !important;
+}
+
+.panel-col-teal{
+    border: 1px solid #009688 !important;
+}
+
+.pd {
+    padding: 0 30px 10px 30px!important;
+}
+
+.pd2 {
+    padding: 10px 30px!important;
+}
+
+.pd2 h4{
+    font-weight: 700;
+}
+
+.pd2 li {
+    padding-bottom: 10px;
+}
+
+.panel a:after,
+.panel>a.active[aria-expanded=false]:after {
+	left: 10px !important;
+}
+
+.panel a[aria-expanded=true]:after,
+.panel>a.active:after {
+    left: 10px !important;
+}
+.or-id {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.bayar tr, .data tr {
+    color: #252525;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bayar td, .data td {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.data, .bayar {
+    width: 100%;
+}
+
+.data .kanan {
+    float: right;
+    max-width: 70%;
+    text-align: right;
+}
+
+.data .fw-normal {
+    float: left;
+    max-width: 30%;
+}
+
+.bayar .kanan {
+    float: right;
+    max-width: 20%;
+    text-align: right;
+}
+
+.bayar .fw-normal {
+    float: left;
+    max-width: 80%;
+}
+
+.bayar tr.total-price {
+    border-bottom: none;
+    font-weight: 700;
+}
+
+.beli-sukses {
+    background-color: #e6e6e6;
+    border: 3px dashed #e73c3c;
+    border-radius: 5px;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation:    blink 1s infinite;
+    animation:         blink 1s infinite;
+}
+
+.beli-sukses p {
+    font-size: 18px;
+    color: #000000;
+    margin: 10px;
+}
+
+@-webkit-keyframes blink {
+    0%   { border-color: transparent; }
+    49% { border-color: transparent;}
+    50% { border-color: #e73c3c;}
+    99% { border-color: #e73c3c;}
+    100% { border-color: transparent;}
+}
+@-moz-keyframes blink {
+    0%   { border-color: transparent; }
+    49% { border-color: transparent;}
+    50% { border-color: #e73c3c;}
+    99% { border-color: #e73c3c;}
+    100% { border-color: transparent;}
+}
+@keyframes blink {
+    0%   { border-color: transparent; }
+    49% { border-color: transparent;}
+    50% { border-color: #e73c3c;}
+    99% { border-color: #e73c3c;}
+    100% { border-color: transparent;}
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Back to Top and Chatme ]*/
+
+#ripple {
+  background-position: center;
+  transition: background 0.8s;
+  color: #fff
+}
+#ripple:hover {
+    background: #e7ab3c radial-gradient(circle, transparent 1%, #e7ab3c 1%) center/15000%;
+}
+#ripple:focus {
+    background-color: #FFEB3B !important;
+    background-size: 100%;
+    transition: background 0s;
+    cursor: pointer;
+    border: 1px solid #FFEB3B;
+    outline: 0;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.075), 0 0 8px #FFEB3B;
+}
+#ripple:active {
+    background-color: #FFEB3B !important;
+    background-size: 100%;
+    transition: background 0s;
+    cursor: pointer;
+    border: 1px solid #FFEB3B;
+    outline: 0;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.075), 0 0 8px #FFEB3B;
+}
+
+.backtop {
+    position: fixed;
+    z-index: 999;
+    right: 3%;
+    bottom: 3.5rem;
+    display: none;
+    padding: 14px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+.backtop span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bantuan {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 3%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 10px;
+}
