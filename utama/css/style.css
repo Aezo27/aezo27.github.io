@@ -2887,7 +2887,8 @@ ol {
 }
 
 .checkout-content {
-	margin-bottom: 50px;
+	margin-top: 20px;
+	display: none;
 }
 
 .checkout-content .content-btn,
@@ -4079,7 +4080,7 @@ ol {
 		padding-top: 50px;
 	}
 	.checkout-content input {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 }
 
@@ -4261,7 +4262,7 @@ ol {
 		padding-top: 50px;
 	}
 	.checkout-content input {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 }
 

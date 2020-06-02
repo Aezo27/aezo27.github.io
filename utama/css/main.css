@@ -22,6 +22,21 @@ a {
 }
 
 /*//////////////////////////////////////////////////////////////////
+[ Check-Out Page ]*/
+.pesan-tambahan {
+    border-bottom: none !important;
+    text-transform: none !important;
+}
+
+#add-pesan {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 171px;
+    border: 2px solid #ebebeb;
+}
+
+/*//////////////////////////////////////////////////////////////////
 [ Payment Page ]*/
 
 .btn1 {

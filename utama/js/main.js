@@ -215,7 +215,7 @@
 		}
 	});
 
-    $('.product-pic-zoom').zoom();
+    // $('.product-pic-zoom').zoom();
     
     /*-------------------
 		Quantity change
@@ -245,6 +245,7 @@
     Upload Image
 --------------------- */
 
+
 var reader = new FileReader();
 reader.onload = function (e) {
     $('#gambar').attr('src', e.target.result);
@@ -259,3 +260,14 @@ function readURL(input) {
 $("#myFile").change(function () {
     readURL(this);
 });
+
+/*-------------------
+    Reseller Section
+--------------------- */
+function ctg(checkboxElem) {
+    if (checkboxElem.checked) {
+        $(".checkout-content").show();
+    } else {
+        $(".checkout-content").hide();
+    }
+}
