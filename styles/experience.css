@@ -732,3 +732,14 @@ section
 {
 	margin-top: 18px;
 }
+.exp_image
+{
+	width: 90px;
+	height: 90px;
+	padding-top: 10px;
+	margin: auto;
+}
+.exp_image img
+{
+	max-width: 100%;
+}
